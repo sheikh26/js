@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+function calc(frm){
+  var n1 = parseInt(frm.num1.value);
+  var n2 = parseInt(frm.num2.value);
+  frm.sum.value = n1 + n2;
+}
+
+
+</script>
+
+
+</head>
+<body>
+<H1>Test Button</H1>
+
+<form action="">
+
+<input type="text" name="num1"> 
++ <input type="text" name="num2">
+= <input type="text" name="sum" readonly="readonly">
+
+<input name="operation" type="button" value="Calculate"  
+onclick="calc(this.form)" >
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type"
+			content="text/html; charset=ISO-8859-1">
+
+		<title>Insert title here</title>
+
+		<script type="text/javascript" src="cal/calendar.js"></script>
+
+
+	</head>
+	<body>
+		<H1>
+			Test Button
+		</H1>
+
+		<form action="Abc.jsp">
+
+			Date Of Birth
+			<input type="text" name="dob" readonly="readonly">
+
+			<a href="javascript:getCalendar(document.forms[0].dob);"> 
+			<img src="images\cal.jpg" width="16" height="15" border="0"
+					alt="Calender"> 
+		    </a>
+			<BR>
+
+			Date Of Joining
+			<input type="text" name="doj" readonly="readonly">
+
+			<a href="javascript:getCalendar(document.forms[0].doj);"> 
+			<img src="images\cal.jpg" width="16" height="15" border="0"
+					alt="Calender"> 
+		    </a>
+		</form>
+
+
+	</body>
+</html>

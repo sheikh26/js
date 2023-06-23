@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Read Me</title>
+</head>
+<body>
+
+<H1><font face="Arial, Helvetica, sans-serif">SUN<font color="#FF0000" size="7"><strong>R</strong></font>AYS</font> 
+  Technologies</H1>
+<H1>Java Script</H1>
+<ol>
+  <li>Javascript functions are written in &lt;script type=&quot;text/javascript&quot;&gt; 
+    &lt;/script&gt; tag</li>
+  <li>&lt;script &gt; tag can be wriiten anywhere in HTML but &lt;HEAD&gt; tag 
+    is prefered to write java script functions because head postion is load in 
+    browser first.</li>
+  <li>Function is always start with 'function' key word</li>
+  <li>Variables are definbed by 'var' keyword ex 'var msg =0'</li>
+  <li>Variable data type depened on its stored value ex. 
+    <ol>
+      <li>var msg = 1 ; //integer</li>
+      <li>var msg =&quot;Galaxy&quot; //string</li>
+      <li>var msg = 1.5 //float</li>
+      <li>etc.</li>
+    </ol>
+  </li>
+  <li>String can be representaed by single quote (') or double quote (&quot;) 
+    ex. 
+    <ol>
+      <li>var org = &quot;Galaxy &quot; Or var org = 'Galaxy'</li>
+    </ol>
+  </li>
+</ol>
+<p><strong>Example 1 : TestButtonClick.html</strong></p>
+<p>Desciption : Basic JS elements</p>
+<ul>
+  <li>Function decalarion '<font color="#0000FF">testClick()'</font></li>
+  <li>Variable declaration '<font color="#0000FF">var msg</font>'</li>
+  <li>Value assigment '<font color="#0000FF">msg = &quot;You have Clicked Button</font>&quot;'</li>
+  <li>Alert Box - <font color="#0000FF">alert(msg)</font></li>
+  <li>Pass input object reference '<font color="#0000FF">changeLabel</font>(<strong><font color="#FF0000">this</font></strong>)'</li>
+  <li>Access input object attributes '<font color="#0000FF">alert</font>(<font color="#FF0000">ele.value</font>)'</li>
+  <li>Change button lable '<font color="#0000FF">ele.value = &quot;Don't Click 
+    Me&quot;</font>'</li>
+  <li>If condition '<font color="#0000FF">if(ele.value == 'Click Me')</font>'</li>
+  <li>Event call at button's onClick event '<font color="#0000FF">onclick=&quot;changeLabel(this)</font>'</li>
+</ul>
+<p><strong>Example 2 : TestSumNum.html</strong></p>
+<p>Desciption : Sum to input fields and store in thired imput element</p>
+<ul>
+  <li>Pass Form object from input element <font color="#0000FF">&quot;calc(this.form)&quot;</font></li>
+  <li>Access form element from form object <font color="#0000FF">'frm.num1.value'</font></li>
+  <li>Convert string into integer <font color="#0000FF">'parseInt(frm.num1.value)'</font></li>
+</ul>
+<H1><strong>Example 3 : TestConfirm.html</strong></H1>
+<p>Desciption : Confirm Box for YES/NO value</p>
+<ul>
+  <li>Confirm box woth Yes / No option in case of Delete kind functionality '<font color="#0000FF">var 
+    flag = confirm(&quot;Are you sure ?&quot;);</font>'</li>
+  <li>Confirm box returns true or false value<font color="#0000FF">. true and 
+    false are keywords</font></li>
+  <li>Progparamaticly set focus at a input element '<font color="#0000FF">frm.rollNo.focus()</font>'</li>
+  <li>Progparamatic form submittion '<font color="#0000FF">frm.submit()</font>'</li>
+</ul>
+<H1><strong><font size="3">Example 4 : TestJSLib.html</font></strong></H1>
+<p>Desciption : Java Library file</p>
+<ul>
+  <li>Library file should have .js extention </li>
+  <li>.js does contain function and global variables</li>
+  <li>Use &lt;script type=&quot;text/javascript&quot; src=&quot;lib.js&quot;&gt;&lt;/script&gt; 
+    to include a file</li>
+</ul>
+<H1><strong><font size="3">Example 5 : TestCalendar.html</font></strong></H1>
+<p>Desciption : A Calendar Icon</p>
+<ul>
+  <li>Need images/cal.jpg, cal/calendar.js, and HTMLCalendar.htm files</li>
+  <li>Insert following link next to desired date filed </li>
+  <li>Date Of Birth<br>
+    &lt;input type=&quot;text&quot; name=&quot;dob&quot; readonly=&quot;readonly&quot;&gt; 
+    <p> &lt;a href=&quot;javascript:getCalendar(document.forms[0].<font color="#FF0000">dob</font>);&quot;&gt; 
+      <br>
+      &lt;img src=&quot;images\cal.jpg&quot; width=&quot;16&quot; height=&quot;15&quot; 
+      border=&quot;0&quot;<br>
+      alt=&quot;Calender&quot;&gt; <br>
+      &lt;/a&gt;</p>
+  </li>
+  <li>Passed attribute document.forms[0].<font color="#FF0000"><strong>dob</strong></font> 
+    should be the name of input element, in which you are need value back after 
+    selection from calendar</li>
+</ul>
+<H1><strong><font size="3">Example 6 : TestMenu.html</font></strong></H1>
+<p>Desciption : A Menu</p>
+<ul>
+  <li>Need menu.js, pbrowser_dom.js, and pbrowser_ie.js files</li>
+  <li>Modified menu.js to customize menu elements </li>
+  <li>Put following commands whereever u need menu </li>
+  <li>&lt;div style=&quot;padding:0;height:90%;&quot;&gt; <br>
+    &lt;script language=&quot;JavaScript&quot; vqptag=&quot;doc_level_settings&quot; 
+    is_vqp_html=1 <br>
+    vqp_datafile0=&quot;menu.js&quot; vqp_uid0=859470&gt;<br>
+    cdd__codebase = &quot;&quot;;cdd__codebase859470 = &quot;&quot;;&lt;/script&gt;<br>
+    &lt;script language=&quot;JavaScript&quot; src=&quot;menu.js&quot;&gt;&lt;/script&gt;<br>
+    &lt;script vqptag=&quot;placement&quot; vqp_menuid=&quot;859470&quot; language=&quot;JavaScript&quot;&gt;<br>
+    create_menu(859470)<br>
+    &lt;/script&gt;<br>
+    <br>
+    &lt;/div&gt;</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

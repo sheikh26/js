@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+function validate(frm){
+  
+  var flag = true;
+
+  if(frm.id.value == ''){
+  	alert("User ID can not be null");
+	flag = false;
+  }
+
+  if(frm.pwd.value == ''){
+  	alert("Password can not be null");
+	flag = false;
+  }
+  return flag;
+}
+</script>
+
+
+</head>
+<body>
+<H1>Test Button</H1>
+
+<form action="Abc.jsp" onsubmit="return validate(this);">
+
+User ID <input type="text" name="id"><br>
+Password <input type="password" name="pwd"><br>
+
+<input name="operation" type="submit" value="Chou" >
+
+</form>
+
+
+</body>
+</html>

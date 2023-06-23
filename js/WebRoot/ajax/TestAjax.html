@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<script type="text/javascript" src="ajax.js"></script>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function getContent(url){
+ 
+ getAjaxContent('bodyText',url,'');
+	
+}
+//-->
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+<H1>Select Site</H1> 
+<HR>
+<TABLE border=5 cellspacing=0 witdh = 100%>
+<TR>
+	<TD>
+	<B>Yahoo.com</B> 
+	<INPUT TYPE="radio" NAME="site" onClick="getContent('http://www.yahoo.com')">
+
+	<B>Gmail.com</B> <INPUT TYPE="radio" NAME="site" onClick="getContent('http://www.gmail.com')">
+	<B>Hotmail.com</B> <INPUT TYPE="radio" NAME="site"
+	onClick="getContent('http://www.hotmail.com')" >
+	
+	</TD>
+</TR>
+<TR>
+	<TD id='bodyText'>Select Site</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

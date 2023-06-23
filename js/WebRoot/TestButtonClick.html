@@ -1,0 +1,44 @@
+<html>
+<head>
+
+<title>Example Button Click Event</title>
+
+<script type="text/javascript">
+
+function testClick(){
+  var msg = "You have Clicked Button" ;
+  alert(msg);
+}
+
+function changeLabel(ele){
+  alert(ele.value);
+  if(ele.value == 'Click Me'){
+	  ele.value = "Don't Click Me";
+  } else {
+	  ele.value = "Click Me";
+  }	  
+}
+
+function testExit(){
+  var msg = "You have moved from Button" ;
+  alert(msg);
+
+}  
+
+</script>
+
+
+</head>
+<body>
+<H1>Test Button</H1>
+
+<form action="">
+
+<input name="operation" type="button" value="Click Me"  
+onclick="changeLabel(this)" >
+
+</form>
+
+
+</body>
+</html>
